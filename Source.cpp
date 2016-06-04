@@ -53,9 +53,13 @@ int main()
 		d[21][i] = 0;
 	}
 	Load();
-	Draw();
-	Step();
-	Draw();
-	Step();
-	Draw();
+	cout << "Steps Number: ";
+	int s;
+	cin >> s;
+	while (s>0)
+	{
+		Step();
+		Draw();
+		s--;
+	}
 }
